@@ -1,4 +1,8 @@
-location /ip {
+location = /ip {
     default_type text/html;
-    return 200 "<html><head><title>Current IP Check</title></head><body>Current IP Address: $remote_addr</body></html>";
+    content_by_lua '
+        ngx.say("<html><head><title>Current IP Check</title></head><body>Current IP Address: ")
+        ngx.say(ngx.var.remote_addr)
+        ngx.say("</body></html>")
+    ';
 }
