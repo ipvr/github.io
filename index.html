@@ -2,7 +2,7 @@
   $(function() {
     $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
       function(json) {
-        document.write("My public IP address is: ", json.ip);
+        document.write("Current IP Address is: ", json.ip);
       }
     );
   });
