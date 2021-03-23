@@ -1,8 +1,1 @@
-location = /ip {
-    default_type text/html;
-    content_by_lua '
-        ngx.say("<html><head><title>Current IP Check</title></head><body>Current IP Address: ")
-        ngx.say(ngx.var.remote_addr)
-        ngx.say("</body></html>")
-    ';
-}
+<html><head><title>Current IP Check</title></head><body>Current IP Address: <?=$_SERVER['REMOTE_ADDR']?></body></html>
