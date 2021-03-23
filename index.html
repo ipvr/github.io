@@ -1,7 +1,8 @@
-<script type="application/javascript">
-  function getIP(json) {
-    document.write("Current IP Address: ", json.ip);
-  }
-</script>
-
-<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
+<html>
+  <head>
+    <title>
+      Current IP Check
+    </title>
+  </head>
+  <body>
+  Current IP Address: <?=$_SERVER['REMOTE_ADDR']?></body></html>
