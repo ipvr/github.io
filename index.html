@@ -1,11 +1,3 @@
 <?php
-$findit=array('/php/super-variables/test.php',
-'/php/super-variables/test1123.php',
-'/php/super-variables/php-self-advanced-example1.php'
-);
-for ($j=0; $j<count($findit); $j++)
-{
-if ($_SERVER['PHP_SELF']==$findit[$j])
-echo "You are learning PHP Super Globals";
-}
+echo $_SERVER['REMOTE_ADDR'];
 ?>
