@@ -1,6 +1,10 @@
 <html>
-<?php
-    $ip = file_get_contents('https://api.ipify.org');
-    echo "My public IP address is: " . $ip;
-?>
+    <head>
+        <title>
+            Current IP Check
+        </title>
+    </head>
+    <body>
+        echo "Current IP Address: "<?php $_SERVER['REMOTE_ADDR']?>
+    </body>
 </html>
